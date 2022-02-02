@@ -1,11 +1,12 @@
 /* global bootstrap: false */
-// (function () {
-//   'use strict'
-//   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-//   tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-//     new bootstrap.Tooltip(tooltipTriggerEl)
-//   })
-// })()
+(function () {
+  'use strict'
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+    new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+})()
+
 
 
 
@@ -17,7 +18,7 @@ if (sidebarInfo === 'collapsed') {
 
 function navToggle() {
   let currentSidebar = localStorage.getItem("sidebar");
-  
+
   if (currentSidebar === 'collapsed') {
     document.body.classList.remove("collapsed");
     localStorage.setItem("sidebar", "uncollapsed");
