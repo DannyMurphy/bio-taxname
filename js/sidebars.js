@@ -24,8 +24,7 @@
 
 let sidebar = getCookie('sidebar');
 if (sidebar === 'collapsed') {
-  document.getElementById("sidebar").classList.add("collapsed");
-  
+  document.body.classList.add("collapsed");  
 }
 
 function navToggle() {
@@ -33,35 +32,15 @@ function navToggle() {
   let currentSidebar = getCookie('sidebar');
 
   if (currentSidebar === 'collapsed') {
-    document.getElementById("sidebar").classList.remove("collapsed");
+    document.body.classList.remove("collapsed");
     document.cookie = 'sidebar=collapsed; path=/; max-age=0;';
   } else {
-    document.getElementById("sidebar").classList.add("collapsed");
+    document.body.classList.add("collapsed");
     document.cookie = 'sidebar=collapsed;';
   }
 
 }
 
-
-
-// //toggle class collapsed on sidebar
-// function toggleNav() {
-//   console.log(sidebar);
-//   var currentSidebar = getCookie('sidebar');
-
-//   if (currentSidebar === 'collapsed') {
-//     console.log('remove;');
-//     document.cookie = 'sidebar=collapsed; path=/; max-age=0;';
-//   } else {
-//     console.log('add');
-//     // Delete the cookie
-//     document.cookie = 'sidebar=collapsed;';
-//   }
-//   document.getElementById("sidebar").classList.toggle("collapsed");
-
-//   //Store selection in a cookie
-  
-// };
 
 //eventlistern to listen for clicks in the sidebar
 document.addEventListener('click', function (event) {

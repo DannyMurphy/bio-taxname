@@ -7,47 +7,53 @@ html {
   height: -webkit-fill-available;
 }
 
-
 aside {
   width: 17rem;
   background: red;
 }
-aside.collapsed {
-  width: 4rem;
 
-  .fixed {
+main {
+  width: calc(100vw - 17rem);
+}
+
+.collapsed {
+  main {
+    width: calc(100vw - 4rem);
+  }
+  aside {
     width: 4rem;
-  }
 
-  .nav-link {
-    font-size: 0;
-    padding: 0.5rem 0.5rem;
-
-    .bi {
-      margin-right: 0;
+    .fixed {
+      width: 4rem;
     }
 
-    i {
-      font-size: 16px;
+    .nav-link {
+      font-size: 0;
+      padding: 0.5rem 0.5rem;
+
+      .bi {
+        margin-right: 0;
+      }
+
+      i {
+        font-size: 16px;
+      }
+      .nav-toggle {
+        transform: rotate(180deg);
+        display: block;
+      }
     }
-    .nav-toggle {
-      transform: rotate(180deg);
-      display: block;
+
+    .dropdown-toggle {
+      font-size: 0;
     }
-  }
-
-  .dropdown-toggle {
-    font-size: 0;
-  }
-  .brand {
-
-
-    img {
-      height: 2rem;
-      width: 2rem;
-      object-fit: cover;
-      object-position: left top;
-      
+    .brand {
+      img {
+        height: 2rem;
+        width: 2rem;
+        object-fit: cover;
+        object-position: left top;
+      }
     }
   }
 }
@@ -56,9 +62,6 @@ aside.collapsed {
   img {
     height: 60px;
   }
-}
-main {
-  flex-grow: 4;
 }
 
 .sidebar-menu {
@@ -70,17 +73,15 @@ main {
 
 .fixed {
   position: fixed;
-  
+
   height: 100vh;
   max-height: 100vh;
   width: 17rem;
 }
 
-
 aside {
   display: flex;
   flex-wrap: nowrap;
-  
 }
 
 aside > div {
@@ -90,10 +91,12 @@ aside > div {
 .bi {
   pointer-events: none;
   fill: currentColor;
-  margin-right: .4em;
+  margin-right: 0.4em;
 }
 
-.dropdown-toggle { outline: 0; }
+.dropdown-toggle {
+  outline: 0;
+}
 
 .nav-flush .nav-link {
   border-radius: 0;
@@ -102,15 +105,15 @@ aside > div {
 .btn-toggle {
   display: inline-flex;
   align-items: center;
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   font-weight: 600;
-  color: rgba(0, 0, 0, .65);
+  color: rgba(0, 0, 0, 0.65);
   background-color: transparent;
   border: 0;
 }
 .btn-toggle:hover,
 .btn-toggle:focus {
-  color: rgba(0, 0, 0, .85);
+  color: rgba(0, 0, 0, 0.85);
   background-color: #d2f4ea;
 }
 
@@ -118,12 +121,12 @@ aside > div {
   width: 1.25em;
   line-height: 0;
   content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
-  transition: transform .35s ease;
-  transform-origin: .5em 50%;
+  transition: transform 0.35s ease;
+  transform-origin: 0.5em 50%;
 }
 
 .btn-toggle[aria-expanded="true"] {
-  color: rgba(0, 0, 0, .85);
+  color: rgba(0, 0, 0, 0.85);
 }
 .btn-toggle[aria-expanded="true"]::before {
   transform: rotate(90deg);
@@ -131,8 +134,8 @@ aside > div {
 
 .btn-toggle-nav a {
   display: inline-flex;
-  padding: .1875rem .5rem;
-  margin-top: .125rem;
+  padding: 0.1875rem 0.5rem;
+  margin-top: 0.125rem;
   margin-left: 1.25rem;
   text-decoration: none;
 }
@@ -145,6 +148,9 @@ aside > div {
   overflow-y: auto;
 }
 
-.fw-semibold { font-weight: 600; }
-.lh-tight { line-height: 1.25; }
-
+.fw-semibold {
+  font-weight: 600;
+}
+.lh-tight {
+  line-height: 1.25;
+}
