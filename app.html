@@ -11,12 +11,12 @@
 </head>
 
 <section class="d-flex">
-  <aside>
+  <aside id="sidebar">
     <div class="fixed">
       <div class="d-flex flex-column flex-shrink-0 p-3 bg-light sidebar-menu">
 
-        <a href="#!" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <img src="assets/images/logo-dbca-bio-dark.svg" alt="Biodiversity Information Office" style="height: 60px;" />
+        <a href="#!" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none brand">
+          <img src="assets/images/logo-dbca-bio-dark.svg" alt="Biodiversity Information Office" />
         </a>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
@@ -50,14 +50,17 @@
               Customers
             </a>
           </li>
+        </ul>
+
+        <ul class="nav nav-pills flex-column mt-auto">    
           <li>
-            <a href="#" class="nav-link link-dark">
-              <i class="bi bi-list" id="header-toggle"></i>
+            <a href="#" class="nav-link link-dark" id="nav-toggle"> 
+              <i class="bi bi-chevron-left nav-toggle"></i>
               Hide
             </a>
           </li>
         </ul>
-        <hr style="margin-top: auto;">
+        <hr>
         <div class="dropdown">
           <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
             id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
@@ -79,7 +82,8 @@
   </aside>
 
   <main class="px-5 ms-xl-4 mt-3">
-
+    <h1>Taxonomic Names Manager</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
     <table class="table table-bordered">
       <thead>
